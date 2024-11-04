@@ -230,13 +230,17 @@ Inheritance is a feature of object-oriented programming that allows code reusabi
 Cryptography is a method of protecting information and communications through the use of codes, so that only those for whom the information is intended can read and process. 
 
 # using EC2 in aws
-1. First open aws search EC2 then Launch Instance and there select keypair in putty then download it.
+First open aws search EC2 then Launch Instance and there select keypair in putty then download it.
 
-2. after that Launch it and run putty and paste public id on HOST NAME and open that downloaded key pair for putty in SSH then Auth then Credentials and open there.
+after that Launch it and run putty and paste public id on HOST NAME and open that downloaded key pair for putty in SSH then Auth then Credentials and open there.
 
-3. after that run it and write username as ubuntu as selected os and then type following commands.
+after that run it and write username as ubuntu as selected os and then type following commands.
 
-4. sudo apt update
+'sudo apt update
+
+
+
+
 sudo apt install apache2
 to install a web server on ip then
 
