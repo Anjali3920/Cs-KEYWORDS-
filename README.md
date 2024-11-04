@@ -412,6 +412,7 @@ This command will launch our vm which we have created on openstack
 •then we have to create the target group where we have to select the two insatance we have create then we have to go to helath check edited option which was present below the load balancer is create ,then edit it as given below image
 
 # di
+![Screenshot_20241104_202750_Telegram](https://github.com/user-attachments/assets/0dec2ccd-a41e-4321-bed4-014550d97d7b)
 
 •after that come to load balancer where we have to select the target group which we have created then make the load balancer , it will look like the given image below .
 
