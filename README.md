@@ -321,6 +321,7 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
 ```
 # Run the above command on you browser and in server_ip add you ip address provided by AWS
 # diagram
+![Screenshot_20241104_202055_Telegram](https://github.com/user-attachments/assets/51c7b173-156a-436f-9077-99fc4ebbd38c)
 
 # Installing openstack on VM and creating a VM on it
 1. CREATE AN INSTANCE IN AWS AS , WITH OS OF UBUNTU OR WHAT YOU WANT THEN CHANGE SOME SETTINGS TO WORK LIKE TAKING
