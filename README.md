@@ -375,6 +375,8 @@ This command will launch our vm which we have created on openstack
 
 # dia
 
+![Screenshot_20241104_202503_Telegram](https://github.com/user-attachments/assets/3ff0a649-2545-4527-8cd0-b75136d830f2)
+
 •Then create INTERNET GATWAY , whic is to be connected to your VPC which is created earliarly.
 
 # dia
