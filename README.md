@@ -426,6 +426,7 @@ htop
 ![Screenshot_20241104_202853_Telegram](https://github.com/user-attachments/assets/4ce17422-4b88-4fc4-b8bb-c65deef5155c)
 ...
 
+![IMG-20241105-WA0010](https://github.com/user-attachments/assets/4698dea7-14b1-40e2-ab0a-30b72c3f563c)
 
 
 
