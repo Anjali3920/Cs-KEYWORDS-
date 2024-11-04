@@ -239,33 +239,35 @@ after that run it and write username as ubuntu as selected os and then type foll
 ```bash
 sudo apt update
 ```
-
-
-
-
-
-
+``` bash
 sudo apt install apache2
+```
 to install a web server on ip then
-
-5. sudo su
+```
+sudo su
+```
 for convert $ into # for getting admin role then
-
-6. cd /var/www/html/
+```
+cd /var/www/html/
+```
 then
-
-7. ls
+```
+ls
+```
 for list of html file in it
+then copy that html file name and write
 
-8. then copy that html file name and write
-
-9. rm index.html
+```
+rm index.html
+```
 rm means remove command
 
-10. vi index.html
+```
+vi index.html
+```
 this will open a notepad like and write html code there like (vi is editor) 
 
-11. then press ctrl+c then shift+colon then write wq and enter
+ then press ctrl+c then shift+colon then write wq and enter
 
 12. now copy your public ip and paste it on browser you will see the texts written by you (by using html above)
 
