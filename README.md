@@ -1,4 +1,4 @@
-![Screenshot_20241104_202853_Telegram](https://github.com/user-attachments/assets/4ce17422-4b88-4fc4-b8bb-c65deef5155c)
+
 # CLOUD COMPUTING 
 
 # How to make a vm( virtual machine)=
@@ -429,8 +429,8 @@ seq 999999999999999999999999999999999999999999999999999999999 > /dev/null &
 ```
 htop
 ```
-![Screenshot_20241104_202853_Telegram](https://github.com/user-attachments/assets/14546564-a44a-4342-a7ce-ca6b899b9275)
 ![Screenshot_20241104_202853_Telegram](https://github.com/user-attachments/assets/4ce17422-4b88-4fc4-b8bb-c65deef5155c)
+...
 
 
 
