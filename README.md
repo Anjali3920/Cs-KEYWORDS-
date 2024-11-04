@@ -426,10 +426,10 @@ htop
 ```
 seq 999999999999999999999999999999999999999999999999999999999 > /dev/null &
 ```
-```
 htop
 ```
-![Uploading image.png…]()
+![Screenshot_20241104_202853_Telegram](https://github.com/user-attachments/assets/14546564-a44a-4342-a7ce-ca6b899b9275)
+
 
 
 
