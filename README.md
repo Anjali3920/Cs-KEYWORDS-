@@ -112,7 +112,7 @@ sudo vi index.html
 Add your website's HTML content and save the file.
 YAY! Your link or IP adress of your instance will now work.
 
-USING DOCKER CONTAINER's IN VM ,TO ADD NGINX SEVER IN IT AND TYPING HI IN WEB SERVER
+# USING DOCKER CONTAINER's IN VM ,TO ADD NGINX SEVER IN IT AND TYPING HI IN WEB SERVER
 1. First I login in my AWS account . Thne I created an instance .
 2. In instance I make some changes , where I edit in network setting , where I added SSH , HTTPS , HTTP, ALL TRAFFIC , ALL TCP , ALL UDP AND CREATED AN INSTANCE.
 3. Then I open puuty add the IP address from instance and add key pair file which I have downloaded when I creating instance.
@@ -120,56 +120,96 @@ USING DOCKER CONTAINER's IN VM ,TO ADD NGINX SEVER IN IT AND TYPING HI IN WEB SE
 5. After that I have to install docker in my OS .
 6. Then , I enter few command to install the docker
 7. COMMANDS ARE:
+``` bash
 curl -sL https://github.com/ShubhamTatvamasi/docker-install/raw/master/docker-install.sh | bash
+```
+```
 newgrp docker
+```
 this command will help us to use docker
+```
 docker ps
+```
 provides a list of the Docker containers on your machine
+```
 docker --version
+```
 to check the version of docker which is installed
+```
 docker pull nginx
+```
 TO use nginx server in container
+```
 docker run --name docker-nginx -p 80:80 nginx
+```
 In a web browser, enter your server’s IP address to reveal Nginx’s default landing page
 ctrl + c #to stop the container from running
+```
 docker ps -a
+```
 The output reveals that the Docker container has exited
-DETACHED MODE
+●DETACHED MODE
+```
 docker run --name docker-nginx -p 80:80 -d nginx
+```
 output is the container’s ID
+```
 docker ps
+```
 provoide new information about container
+```
 docker stop docker-nginx
+```
 to stop the container
+```
 docker rm docker-nginx
+```
 Building a Web Page to Serve on Nginx
+```
 mkdir -p ~/docker-nginx/html
+```
 Create a new directory for the website content within the home directory
+```
 cd ~/docker-nginx/html
+```
 Create an HTML file to serve on the server
+```
 ls
+```
+```
 cd html/
+```
+```
 ls
+```
 will show index.html file
+```
 sudo vi index.html
+```
+```
 i
+```
 help to insert in the web server
+```
 <html> hi </html>
+```
 write whatever you want to write I write only hi
 ctrl + c
 shift + ;
 wq
 press {ENTER}
-
+```
 docker run --name docker-nginx -p 80:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
+```
 Linking the container to the VM
+
 After running that command, enter the server’s IP address into the browser to view the new landing page
 
 
 
 
 
-INSTALLING MINIKUBE IN VM
+# INSTALLING MINIKUBE IN VM
 1. CREATE AN INSTANCE IN AWS AS , WITH OS OF UBUNTU OR WHAT YOU WANT THEN CHANGE SOME SETTINGS TO WORK LIKE TAKING
 Amozon Machine Image (AMI)
 Instance type
@@ -185,53 +225,100 @@ NETWORK SETTING YOU CAN INCLUDE
 2. AFTER THESE CHANGES YOU CAN LAUNCH THE INSTNACE
 3. AFTER THAT COPYING THE IP ADDRESS , ADD IT IN PUTTY AND ALSO SELECT THE KEY WHICH HAS BEEN CREATED IN PERIVOUS STEPS , THEN CLICK OPEN , AND YOUR VM IS AGAIN READY
 4. NOW WE HAVE TO INSTALL DOCKER
+```
 curl -sL https://github.com/ShubhamTatvamasi/docker-install/raw/master/docker-install.sh | bash
+```
 THIS COMMAND WILL HELP TO INSTALL DOCKER
+```
 sudo usermod -aG docker $USER
+```
 THIS COMMAND WILL HEPL TO USE DOCKER FUNCTIONS
+```
 newgrp docker
+```
 THIS WILL CREATE A NEW GROUP IN OS
+```
 sudo snap install kubectl --classic
+```
 TO INSTALL kubectl IN DOCKER
+```
 kubectl version --client
+```
 TO SEE THE VERISON OF kubectl
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+```curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+```
 TO INSTALL MINIKUBE
+```
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
+```
 TO INSTALL MINIKUBE IN LINUX DIRECTORY
+```
 minikube version
+```
 TO CHECK THE VERISON
+```
 minikube start --driver=docker
+```
 TO START THE MINIKUBE ON VM
+```
 minikube start --driver=docker --force
+```
 IF YOU GET SOME ERROR TRY THIS COMMAND TO SOLVE IT
+```
 minikube status
+```
 TO CHECK THE STATUS OF MINIKUBE THAT IT IS RUNNING OR NOT
+```
 kubectl cluster-info
+```
 TO SEE THE CLUSTER INFORMATION
+```
 kubectl config view
+```
 CONFIGURING THE KUBECTL
+```
 kubectl get nodes
+```
 TO SEE HOW MANY NODES ARE PRESENT IN KUBECTL
+```
 kubectl get pods
+```
 TO SEE HOW MANY PODS ARE PRESENT IN KUBECTL
 
 To deploy a sample nginx deployment, run following set of commands.
+```
 kubectl create deployment nginx-web --image=nginx
+```
+```
  kubectl expose deployment nginx-web --type NodePort --port=80
+```
+```
 kubectl get deployment,pod,svc
+```
 Managing Minikube Addons
+```
 minikube addons list
+```
 TO SEE THE LIST OF ADDONS WHICH WE CAN ENABLE
- minikube addons enable dashboard
+```
+minikube addons enable dashboard
+```
 ENABLING DASHBORAD
+```
 minikube addons enable ingress
+```
 ENABLING INGRESS
+```
 minikube dashboard --url
+```
 It will get the url and run the dashboard of MiniKube
+```
 kubectl proxy --address='0.0.0.0' --disable-filter=true &
+```
 It will convert the address for 8001 which we can access on our browser
-http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/workloads?namespace=default
+```
+http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy
+```
 Run the above command on you browser and in server_ip add you ip address provided by AWS
 kube7
 
