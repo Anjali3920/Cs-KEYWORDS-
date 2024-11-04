@@ -319,10 +319,10 @@ It will convert the address for 8001 which we can access on our browser
 ```
 http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy
 ```
-Run the above command on you browser and in server_ip add you ip address provided by AWS
-kube7
+# Run the above command on you browser and in server_ip add you ip address provided by AWS
+# diagram
 
-Installing openstack on VM and creating a VM on it
+# Installing openstack on VM and creating a VM on it
 1. CREATE AN INSTANCE IN AWS AS , WITH OS OF UBUNTU OR WHAT YOU WANT THEN CHANGE SOME SETTINGS TO WORK LIKE TAKING
 Amozon Machine Image (AMI)
 Instance type
@@ -338,20 +338,32 @@ NETWORK SETTING YOU CAN INCLUDE
 2. AFTER THESE CHANGES YOU CAN LAUNCH THE INSTNACE
 3. AFTER THAT COPYING THE IP ADDRESS , ADD IT IN PUTTY AND ALSO SELECT THE KEY WHICH HAS BEEN CREATED IN PERIVOUS STEPS , THEN CLICK OPEN , AND YOUR VM IS AGAIN READY
 Install the openstack snap
+```
 sudo snap install openstack --channel 2024.1/beta
+```
 Prepare the machine
 Sunbeam can generate a script to ensure that the machine has all of the required dependencies installed and is configured correctly for use in OpenStack - you can review this script using:
+```
 sunbeam prepare-node-script
+```
+```
 sunbeam prepare-node-script | bash -x && newgrp snap_daemon
+```
 It will directly execute it
 Deploy the OpenStack cloud using the cluster bootstrap command and accept software defaults:
+```
 sunbeam cluster bootstrap --accept-defaults
+```
 This process will take around 30 min or more/less dependes upon internet speed
+```
 sunbeam configure --accept-defaults --openrc demo-openrc
+```
 This command will configure the deployed cloud . It will also take around 5 min .
+```
 sunbeam launch ubuntu --name test
+```
 This command will launch our vm which we have created on openstack
-openstak 2
+# diagram
 
 VPC
 Go to VPC and create a VPC then we have to create 4 subnets , where 2 subnets are private and other two are public .
