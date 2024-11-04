@@ -380,6 +380,8 @@ This command will launch our vm which we have created on openstack
 •Then create INTERNET GATWAY , whic is to be connected to your VPC which is created earliarly.
 
 # dia
+![Screenshot_20241104_202520_Telegram](https://github.com/user-attachments/assets/b3627ce6-6b80-4d70-b2ee-85da2521fd7d)
+
 
 •Then we have to create VPG virtual privaye gate, and connect to VPC .
 
