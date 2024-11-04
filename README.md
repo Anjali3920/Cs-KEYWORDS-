@@ -321,7 +321,7 @@ It will convert the address for 8001 which we can access on our browser
 http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy
 ```
 # Run the above command on you browser and in server_ip add you ip address provided by AWS
-# diagram
+
 ![Screenshot_20241104_202055_Telegram](https://github.com/user-attachments/assets/51c7b173-156a-436f-9077-99fc4ebbd38c)
 
 # Installing openstack on VM and creating a VM on it
@@ -365,22 +365,18 @@ This command will configure the deployed cloud . It will also take around 5 min 
 sunbeam launch ubuntu --name test
 ```
 This command will launch our vm which we have created on openstack
-# diagram
 
 # VPC
 •Go to VPC and create a VPC then we have to create 4 subnets , where 2 subnets are private and other two are public .
 
-# di
+
 ![Screenshot_20241104_202449_Telegram](https://github.com/user-attachments/assets/9b1de56e-f147-4db6-a164-985d76f3603b)
 
-
-# dia
 
 ![Screenshot_20241104_202503_Telegram](https://github.com/user-attachments/assets/3ff0a649-2545-4527-8cd0-b75136d830f2)
 
 •Then create INTERNET GATWAY , whic is to be connected to your VPC which is created earliarly.
 
-# dia
 ![Screenshot_20241104_202520_Telegram](https://github.com/user-attachments/assets/b3627ce6-6b80-4d70-b2ee-85da2521fd7d)
 
 
@@ -388,22 +384,18 @@ This command will launch our vm which we have created on openstack
 
 •Now we have to go to the route table and create 2 route table , one for IGW and another for VGW .
 
-# di
 ![Screenshot_20241104_202616_Telegram](https://github.com/user-attachments/assets/241e0840-5dfe-49b5-8c21-04c35d9b9572)
 
 
 •Now we have to connect two public subnet in myigw and on other we have to add the private subnets .
 
-# di
 ![Screenshot_20241104_202629_Telegram](https://github.com/user-attachments/assets/37c75423-59a1-4a0b-b9a6-36bc9436768c)
-
 
 •now we have to create two instnaces where we have to enable the public IPv4 .
 
 •then on both instance we have to downlaod the web server here i have downlaoded the apache2 server
 
 •after that i chech that my instances are working or not . 
-# di
 
 •now we have to create the load balancer
 
@@ -411,7 +403,7 @@ This command will launch our vm which we have created on openstack
 
 •then we have to create the target group where we have to select the two insatance we have create then we have to go to helath check edited option which was present below the load balancer is create ,then edit it as given below image
 
-# di
+
 ![Screenshot_20241104_202750_Telegram](https://github.com/user-attachments/assets/0dec2ccd-a41e-4321-bed4-014550d97d7b)
 
 •after that come to load balancer where we have to select the target group which we have created then make the load balancer , it will look like the given image below .
