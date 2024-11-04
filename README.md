@@ -414,7 +414,8 @@ This command will launch our vm which we have created on openstack
 
 •after that come to load balancer where we have to select the target group which we have created then make the load balancer , it will look like the given image below .
 
-# 
+# ![Screenshot_20241104_202826_Telegram](https://github.com/user-attachments/assets/e999f175-6622-4fdf-959c-af1d670c92d7)
+
 
 # 
 
