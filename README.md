@@ -418,7 +418,8 @@ This command will launch our vm which we have created on openstack
 # ![Screenshot_20241104_202826_Telegram](https://github.com/user-attachments/assets/e999f175-6622-4fdf-959c-af1d670c92d7)
 
 
-# 
+![Screenshot_20241104_202837_Telegram](https://github.com/user-attachments/assets/fb1cc518-3da3-4315-abae-05c364a847e1)
+
 
 •Now go to any server and type some commands
 ```
