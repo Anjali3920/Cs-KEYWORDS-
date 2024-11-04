@@ -8,7 +8,7 @@
 
 3.inside ec2 make an instance,
 
-For an instance select an os( operating system),
+4.For an instance select an os( operating system),
 5.make an key pair ( the key pair will automatically be downloaded).
 
 6 while making key pair select ppk type ,
@@ -17,13 +17,13 @@ For an instance select an os( operating system),
 
 8.launch the instance
 
-Install an putty ( search on google how to download putty for (the operating system you have chosen) and download it.
+9.Install an putty ( search on google how to download putty for (the operating system you have chosen) and download it.
 
-After that open the putty and on ssh option paste the public ip from the instance,
+10.After that open the putty and on ssh option paste the public ip from the instance,
 
 11.in the aut option select credentials and browse the key pair you have created in instance,
 
-Now to download a web server open putty and type :-sudo apt update, after that type :-sudo apt Install apache2,
+12.Now to download a web server open putty and type :-sudo apt update, after that type :-sudo apt Install apache2,
 13:- to remove the dollar sign type:- sudo su,
 
 14:- after that the next step is to type :-/var/www/html/
@@ -420,6 +420,7 @@ htop
 ```
 ```
 seq 999999999999999999999999999999999999999999999999999999999 > /dev/null &
+```
 ```
 htop
 ```
