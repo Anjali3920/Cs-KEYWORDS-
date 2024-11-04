@@ -236,9 +236,11 @@ after that Launch it and run putty and paste public id on HOST NAME and open tha
 
 after that run it and write username as ubuntu as selected os and then type following commands.
 
-''' bash
+```bash
 sudo apt update
-'''
+```
+
+
 
 
 
