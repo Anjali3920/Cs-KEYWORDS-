@@ -388,6 +388,8 @@ This command will launch our vm which we have created on openstack
 •Now we have to go to the route table and create 2 route table , one for IGW and another for VGW .
 
 # di
+![Screenshot_20241104_202616_Telegram](https://github.com/user-attachments/assets/241e0840-5dfe-49b5-8c21-04c35d9b9572)
+
 
 •Now we have to connect two public subnet in myigw and on other we have to add the private subnets .
 
