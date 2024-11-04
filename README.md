@@ -370,6 +370,8 @@ This command will launch our vm which we have created on openstack
 •Go to VPC and create a VPC then we have to create 4 subnets , where 2 subnets are private and other two are public .
 
 # di
+![Screenshot_20241104_202449_Telegram](https://github.com/user-attachments/assets/9b1de56e-f147-4db6-a164-985d76f3603b)
+
 
 # dia
 
