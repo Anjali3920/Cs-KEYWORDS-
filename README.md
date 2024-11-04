@@ -350,7 +350,7 @@ sunbeam prepare-node-script
 sunbeam prepare-node-script | bash -x && newgrp snap_daemon
 ```
 It will directly execute it
-Deploy the OpenStack cloud using the cluster bootstrap command and accept software defaults:
+#Deploy the OpenStack cloud using the cluster bootstrap command and accept software defaults:
 ```
 sunbeam cluster bootstrap --accept-defaults
 ```
@@ -365,52 +365,58 @@ sunbeam launch ubuntu --name test
 This command will launch our vm which we have created on openstack
 # diagram
 
-VPC
-Go to VPC and create a VPC then we have to create 4 subnets , where 2 subnets are private and other two are public .
+# VPC
+•Go to VPC and create a VPC then we have to create 4 subnets , where 2 subnets are private and other two are public .
 
-2
+# di
 
-3
+# dia
 
-Then create INTERNET GATWAY , whic is to be connected to your VPC which is created earliy.
+•Then create INTERNET GATWAY , whic is to be connected to your VPC which is created earliarly.
 
-5
+# dia
 
-Then we have to create VPG virtual privaye gate, and connect to VPC .
+•Then we have to create VPG virtual privaye gate, and connect to VPC .
 
-Now we have to go to the route table and create 2 route table , one for IGW and another for VGW .
+•Now we have to go to the route table and create 2 route table , one for IGW and another for VGW .
 
-6
+# di
 
-Now we have to connect two public subnet in myigw and on other we have to add the private subnets .
+•Now we have to connect two public subnet in myigw and on other we have to add the private subnets .
 
-9
+# di
 
-now we have to create two instnaces where we have to enable the public IPv4 .
+•now we have to create two instnaces where we have to enable the public IPv4 .
 
-then on both instance we have to downlaod the web server here i have downlaoded the apache2 server
+•then on both instance we have to downlaod the web server here i have downlaoded the apache2 server
 
-after that i chech that my instances are working or not . 1
+•after that i chech that my instances are working or not . 
+# di
 
-now we have to create the load balancer
+•now we have to create the load balancer
 
-where we have to give vpc, aviablity zone of the ec2 instance
+•where we have to give vpc, aviablity zone of the ec2 instance
 
-then we have to create the target group where we have to select the two insatance we have create then we have to go to helath check edited option which was present below the load balancer is create ,then edit it as given below image
+•then we have to create the target group where we have to select the two insatance we have create then we have to go to helath check edited option which was present below the load balancer is create ,then edit it as given below image
 
-1
+# di
 
-after that come to load balancer where we have to select the target group which we have created then make the load balancer , it will look like the given image below .
+•after that come to load balancer where we have to select the target group which we have created then make the load balancer , it will look like the given image below .
 
-2
+# 
 
-7
+# 
 
-Now go to any server and type some commands
-
+•Now go to any server and type some commands
+```
 htop
+```
+```
 seq 999999999999999999999999999999999999999999999999999999999 > /dev/null &
+```
+```
 htop
+```
 
 
 
