@@ -423,10 +423,8 @@ seq 999999999999999999999999999999999999999999999999999999999 > /dev/null &
 ```
 htop
 ```
-![Screenshot_20241104_202853_Telegram](https://github.com/user-attachments/assets/4ce17422-4b88-4fc4-b8bb-c65deef5155c)
-...
+![Screenshot_20241104_202853_Telegram](https://github.com/user-attachments/assets/d5d7914c-363e-407a-a419-6da8a3c1e77e)
 
-![IMG-20241105-WA0010](https://github.com/user-attachments/assets/4698dea7-14b1-40e2-ab0a-30b72c3f563c)
 
 
 
