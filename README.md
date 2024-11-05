@@ -416,10 +416,7 @@ This command will launch our vm which we have created on openstack
 
 •Now go to any server and type some commands
 ```
-htop
-```
-```
-seq 999999999999999999999999999999999999999999999999999999999 > /dev/null &
+22222222222222222222222 > /dev/null &
 ```
 ```
 htop
